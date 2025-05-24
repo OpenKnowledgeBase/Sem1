@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCANEW Semester 2 Exam Timetable</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            color: #555;
+        }
+        
+        .timetable {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        
+        .timetable th {
+            text-align: left;
+            padding: 12px 15px;
+            background-color: #f5f5f5;
+            font-weight: 600;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .timetable td {
+            padding: 15px;
+            border-bottom: 1px solid #e0e0e0;
+            vertical-align: top;
+        }
+        
+        .date {
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        
+        .day {
+            color: #666;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        
+        .course-code {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .course-name {
+            color: #444;
+            font-size: 14px;
+        }
+        
+        .session {
+            display: inline-block;
+            padding: 3px 8px;
+            font-size: 12px;
+            border-radius: 4px;
+            margin-top: 5px;
+        }
+        
+        .morning {
+            background-color: #e3f2fd;
+            color: #1976d2;
+        }
+        
+        .evening {
+            background-color: #f3e5f5;
+            color: #8e24aa;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 600px) {
+            .timetable th, 
+            .timetable td {
+                padding: 10px;
+                font-size: 14px;
+            }
+            
+            .date-day {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .day {
+                margin-top: 2px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>BCANEW Semester 2 Exam Timetable</h1>
+            <p class="subtitle">June 2025 Term-End Examination</p>
+        </header>
+        
+        <table class="timetable">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Course</th>
+                    <th>Session</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="date">12.06.2025</div>
+                        <div class="day">Thursday</div>
+                    </td>
+                    <td>
+                        <div class="course-code">FST01</div>
+                        <div class="course-name">Foundation Course in Science and Technology</div>
+                    </td>
+                    <td>
+                        <span class="session morning">10:00 AM - 1:00 PM</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="date">13.06.2025</div>
+                        <div class="day">Friday</div>
+                    </td>
+                    <td>
+                        <div class="course-code">BCS-011</div>
+                        <div class="course-name">Computer Basics and PC Software</div>
+                    </td>
+                    <td>
+                        <span class="session evening">2:00 PM - 5:00 PM</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="date">18.06.2025</div>
+                        <div class="day">Wednesday</div>
+                    </td>
+                    <td>
+                        <div class="course-code">BCS-012</div>
+                        <div class="course-name">Basic Mathematics</div>
+                    </td>
+                    <td>
+                        <span class="session morning">10:00 AM - 1:00 PM</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="date">19.06.2025</div>
+                        <div class="day">Thursday</div>
+                    </td>
+                    <td>
+                        <div class="course-code">BCS-015</div>
+                        <div class="course-name">Communication Skills</div>
+                    </td>
+                    <td>
+                        <span class="session evening">2:00 PM - 5:00 PM</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="date">20.06.2025</div>
+                        <div class="day">Friday</div>
+                    </td>
+                    <td>
+                        <div class="course-code">BCS-013</div>
+                        <div class="course-name">Programming in C</div>
+                    </td>
+                    <td>
+                        <span class="session morning">10:00 AM - 1:00 PM</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <footer>
+            <p>Indira Gandhi National Open University</p>
+            <p>Download hall tickets from: ignou.ac.in</p>
+        </footer>
+    </div>
+</body>
+                  </html>
